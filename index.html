@@ -124,7 +124,114 @@
         </div>
       </section>
 
+      <!-- Workload Estimation Form -->
+
+      <section id="estimator" class="section-container">
+        <div class="form-wrapper">
+            <header class="section-header"> 
+                <h2 class="section-title">Check Tier Compatibility</h2>
+                <p class="section-subtitle"> Enter your infrastructure 
+                    requirements to determine your cluster compatibility
+                </p>
+            </header>
+            <form action="#" method="post" class="lead-form">
+                <div class="form-group">
+                    <label for="node-count" class="form-label">Node Count</label>
+
+                    <input 
+                    type="number"
+                    name="node-count"
+                    id="node-count"
+                    class="form-control"
+                    min="0"
+                    max="100"
+                    step="1"
+                    placeholder="10"
+                    required
+                    />
+                    <span class="input-hint">Minimum: 0 - Maximum: 100 </span>
+                </div>
+
+                <div class="form-group">
+                    <label for="log-throughput" class="form-label">Log Throughput</label>
+
+                    <input 
+                    type="number"
+                    name="log-throughput"
+                    id="log-throughput"
+                    class="form-control"
+                    min="0"
+                    max="100"
+                    step="1"
+                    placeholder="50"
+                    required
+                    />
+                    <span class="input-hint">Minimum: 0 - Maximum: 100 </span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Check Tier Eligibility</button>
+            </form>
+        </div> 
+      </section>
+
+      <!-- API sandbox Form -->
+       
+      <section id="capabilities" class="section-container">
+        <div class="form-wrapper">
+            <header class="section-header"> 
+                <h2 class="section-title">Request API Sandbox</h2>
+                <p class="section-subtitle"> Complete the pre-registration form to
+                    recieve API sandbox information details.
+                </p>
+            </header>
+
+            <form action="#" method="post" class="lead-form">
+                <div class="form-group">
+                    <label for="full-name" class="form-label">Full Name</label>
+
+                    <input 
+                    type="text"
+                    name="full-name"
+                    id="full-name"
+                    class="form-control"
+                    placeholder="John Doe"
+                    required
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Work Email</label>
+
+                    <input 
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="work@email.com"
+                    required
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="company" class="form-label">Company</label>
+
+                    <input 
+                    type="text"
+                    name="company"
+                    id="company"
+                    class="form-control"
+                    placeholder="Company Name"
+                    required
+                    />
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Request API Sandbox</button>
+            </form>
+        </div> 
+      </section>
  </main>
+
+ <footer> </footer>
     
 
 </body>
